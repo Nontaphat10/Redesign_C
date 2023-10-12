@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="styleguide.css" />
+        <link rel="stylesheet" href="page1.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="page5.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg " id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="page1.html">
+                    <img src="picture/logo.png" alt="Bootstrap"  height="35">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"    aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-white" href="page1.html">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  ข้อมูลคณะ
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/main/information">แนะนำคณะ</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/operation">การดำเนินงานคณะ</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/main/annualreport">รายงานประจำปี</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/main/newsletter">จดหมายข่าว</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <a class="text-decoration-none text-white" href="page5.html">หลักสูตรที่เปิดสอน</a>
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item bg-warning">หลักสูตรปริญญาตรี</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/db">หลักสูตรบริหารธุรกิจบัณฑิต สาขาวิชาธุรกิจดิจิทัล</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/it">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/gis">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาภูมิสารสนเทศศาสตร์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/cs">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/dsa">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการข้อมูลและการประยุกต์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/cpe">หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/se">หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมซอฟต์แวร์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/cgmt">หลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาคอมพิวเตอร์กราฟิกและมัลติมีเดีย</a></li>
+                                  <li><a class="dropdown-item dropdown-item bg-warning">หลักสูตระดับปริญญาตรีคู่ขนาน 2 ปริญญา</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/main/newsletter">หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ
+                                    และหลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาภาษาอังกฤษ</a></li>
+                                    <li><a class="dropdown-item dropdown-item bg-warning">หลักสูตระดับปริญญาโท ระยะเวลาศึกษา 2 ปี</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/gisapply">หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาภูมิสารสนเทศประยุกต์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/midm">หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาการจัดการเทคโนโลยีและข้อมูลดิจิทัล</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/mcpe">หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์</a></li>
+                                  <li><a class="dropdown-item dropdown-item bg-warning">หลักสูตระดับปริญญาเอก ระยะเวลาศึกษา 3 ปี</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/admission/curriculum/gisapplydoctor">หลักสูตรปรัชญาดุษฎีบัณฑิต สาขาวิชาภูมิสารสนเทศประยุกต์</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  นิสิต
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item " href="page4.html">ฝึกประสบการณ์วิชาชีพ</a></li>
+                                  <li><a class="dropdown-item " href="https://dev.coop.ict.up.ac.th/">ระบบบริหารจัดการโครงการสหกิจศึกษา</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/student/sqict">พัฒนานิสิต</a></li>
+                                  <li><a class="dropdown-item " href="Page6.html">ระบบสารสนเทศ</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                <a class="text-decoration-none text-white" href="page3.html">ศิษย์เก่า</a>
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/alumni/">ระบบสารสนเทศศิษย์เก่า</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  บุคลากร
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/personnel/department">หน่วยงานภายใน</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/personnel/major">สาขาวิชา</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/personnel/download">ขั้นตอนการให้บริการและดาวน์โหลดเอกสาร</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/operation/workmanual">คู่มือการให้บริการ</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/personnel/informationsystem">ระบบสารสนเทศ</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  วิจัย
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item " href="https://ph01.tci-thaijo.org/index.php/jsid/index">วารสารวิชาการ ( JSID )</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/research/academicservice">บริการวิชาการ]</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  มาตราการ COVID-19
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/newseventict/943">มาตราการเฝ้าระวังในช่วงสถาณการณ์ COVID-19</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/student/covid19">มาตราการเกี่ยวกับนิสิตในชวงสถาณการณ์ COVID-19</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item me-3">
+                            <div class="dropdown">
+                                <button
+                                  class="btn text-white "
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-mdb-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  เกี่ยวกับเรา
+                                </button>
+                                <ul class="dropdown-menu bg-secondary-subtle" id="bg" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/complainflow">ขั้นตอนการดำเนินการเกี่ยวกับเรื่องร้องเรียนของ<br>คณะ ICT</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/complain">แจ้งเรื่องร้องเรียนการทุจริตและการประพฤตินิยม</a></li>
+                                  <li><a class="dropdown-item " href="page2.html">คำถามที่พบบ่อย</a></li>
+                                  <li><a class="dropdown-item " href="https://docs.google.com/forms/d/e/1FAIpQLSd-u3sqHUPPwChEg1ugzI5o18loboPb3bluNV1aov35tM7RdQ/viewform">แบบสำรวจความพึงพอใจผู้ใช้เว็บไซต์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/sitemap">ผังเว็บไซต์</a></li>
+                                  <li><a class="dropdown-item " href="https://ict.up.ac.th/web/contact">ติดต่อคณบดี</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <form class="d-flex me-2 " role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          </form>
+                    </ul>
+                </div>
+            </div>
+          </nav>       
+
+          <!--ใส่โค้ดตรงนี้-->
+          <div class="desktop">
+            <div class="div">
+                <a href="https://www.facebook.com/WeLoveICTUP" target="_blank" rel="noopener noreferrer"
+                    ><div class="text-wrapper">We Love_ICTUP Fanpage</div></a
+                >
+                <a href="https://www.facebook.com/WeLoveICTUP" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle" src="img/Rectangle 59.svg" />
+                </a>
+                
+                <viedo href="https://www.google.co.th/maps/place/%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%B2%E0%B8%A3+%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2/@19.027142,99.8976911,17z/data=!4m14!1m7!3m6!1s0x30d9cd28a021651b:0x1656236c104d1b71!2z4LiE4LiT4Liw4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Liq4Liy4Lij4Liq4LiZ4LmA4LiX4Lio4LmB4Lil4Liw4LiB4Liy4Lij4Liq4Li34LmI4Lit4Liq4Liy4LijIOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC4nuC4sOC5gOC4ouC4sg!8m2!3d19.027142!4d99.900266!16s%2Fg%2F120rlpms!3m5!1s0x30d9cd28a021651b:0x1656236c104d1b71!8m2!3d19.027142!4d99.900266!16s%2Fg%2F120rlpms?hl=th&entry=ttu"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                <img class="img" src="img/Rectangle 60.svg" />
+                <a
+                    href="https://www.google.co.th/maps/place/%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%B2%E0%B8%A3+%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2/@19.027142,99.8976911,17z/data=!4m14!1m7!3m6!1s0x30d9cd28a021651b:0x1656236c104d1b71!2z4LiE4LiT4Liw4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Liq4Liy4Lij4Liq4LiZ4LmA4LiX4Lio4LmB4Lil4Liw4LiB4Liy4Lij4Liq4Li34LmI4Lit4Liq4Liy4LijIOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC4nuC4sOC5gOC4ouC4sg!8m2!3d19.027142!4d99.900266!16s%2Fg%2F120rlpms!3m5!1s0x30d9cd28a021651b:0x1656236c104d1b71!8m2!3d19.027142!4d99.900266!16s%2Fg%2F120rlpms?hl=th&entry=ttu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><div class="text-wrapper-2">แผนที่คณะ ICT</div></a
+                >
+                <div class="text-wrapper-3">ประเภทข่าวสาร</div>
+                <div class="rectangle-2"></div>
+                <p class="element">
+                    <a href="https://ict.up.ac.th/web/newsict/1330" target="_blank" rel="noopener noreferrer"
+                        ><span class="span"
+                            >ประชาสัมพนธ์นิสิตส่งผลงานเข้าประกวดดครงการ จินตนาการ สืบสาน วณณกรรมไทยกับอินทัช ปีที่ 15
+                        </span></a
+                    >
+                    <span class="span"
+                        >- 6 ส.ค. 2564, 12:04 น. น. : บริษัท อินทรัช โอลติ้งส์ จำกัด (มหาชน) ดำเนินโครงการ จินตนาการ
+                        สืบสานวรรณกรรมไทยกับอินทัช ปีที่ 15 โดยมีวัตถุประสงค์เพื่อกระตุ้นให้เยาวชนไทยรักการอ่าน..... <br
+                    /></span>
+                    <a href="https://ict.up.ac.th/web/newsict/1251" target="_blank" rel="noopener noreferrer"
+                        ><span class="span"
+                            >เชิญชวนนิสิตเข้าร่วมโครงการอบรมให้ความรู้ทางธุรกิจแก่ผู้ประกอบการเริ่มต้น ประจำปี 2564
+                        </span></a
+                    >
+                    <span class="span"
+                        >- 26 เม.ย. 2564, 11:25 น. น. : สถาบันนวัตกรรมและถ่ายทอดเทคโนโลยี มหาวิทยาลัยพะเยา
+                        เชิญชวนนิสิตเข้าร่วมโครงการอบรมให้ความรู้ทางธุรกิจแก่ผู้ประกอบการเริ่มต้น ประจำปี 2564..... <br
+                    /></span>
+                    <a href="https://ict.up.ac.th/web/newsict/1250" target="_blank" rel="noopener noreferrer"
+                        ><span class="span">เชิญชวนนิสิตเข้าร่วมประกวดกับกิจกรรม Smart Atar Idea By Startup </span></a
+                    >
+                    <span class="span"
+                        >- 26 เม.ย. 2564, 11:21 น. น. : สถาบันนวัตกรรมและถ่ายทอดเทคโนโลยี มหาวิทยาลัยพะเยา
+                        เชิญชวนนิสิตเข้าร่วมประกวดกับกิจกรรม Smart Atar Idea By Startup เพื่อชิงทุนการศึกษามูลค่ารวมกว่า 4......
+                        <br
+                    /></span>
+                    <a href="https://ict.up.ac.th/web/newsict/1236" target="_blank" rel="noopener noreferrer"
+                        ><span class="span"
+                            >เชิญชวนนักเรียน นิสิต เข้าร่วมและสำนึกความเป็นไทย ภายใต้หัวข้อ &#34;เด็กอวด (ทำ) ดี&#34;
+                        </span></a
+                    >
+                    <span class="span"
+                        >- 9 เม.ย. 2564, 16:39 น. น. : ประชาสัมพันธ์เชิญชวนนักเรียน นิสิต เข้าร่วมและสำนึกความเป็นไทย ภายใต้หัวข้อ
+                        &#34;เด็กอวด (ทำ) ดี&#34;..... <br
+                    /></span>
+                    <a href="https://ict.up.ac.th/web/newsict/1208" target="_blank" rel="noopener noreferrer"
+                        ><span class="span">เชิญชวนนิสิตระดับปริญญาตรีเข้าร่วมโครงการ NIDA Debate Camp </span></a
+                    >
+                    <span class="span"
+                        >- 10 มี.ค. 2564, 13:42 น. น. : ประชาสัมพันธ์เชิญชวนนิสิตระดับปริญญาตรีเข้าร่วมโครงการ NIDA Debate
+                        Camp.....</span
+                    >
+                </p>
+                <div class="overlap">
+                    <img class="line" src="img/line-7.svg" />
+                    <div class="rectangle-3"></div>
+                    <img class="rectangle-4" src="img/Rectangle 29.svg" />
+                    <p class="ICT-information-and">
+                        คณะ ICT<br />information and communication technology<br /><br />“วิดีทัศน์ครบรอบ 20
+                        ปีคณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยา”
+                    </p>
+                    <div class="rectangle-5"></div>
+                </div>
+                <video autoplay muted class="rectangle-6" src="viedo/SnapSave.io-ครบรอบ 20 ปี คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยา.mp4"> </viedo> 
+                
+                <p class="p">นิสิตทีม CPE1-UP Cybersec คณะเทคโนโลยีสารสนเทศและการสื่อสารคว้ารางวัลชนะเลิศอันดับ 1</p>
+                <p class="ICT-SHOW-SHARE-UP">
+                    สโมรสรนิสิตคณะ ICT ได้รับรางวัลชนะเลิศอันดับที่ 1 ในกิจกรรม SHOW &amp; SHARE UP-GREEN 2023
+                    ประเภทโครงการด้านการพัฒนากายภาพและสิ่งแวดล้อมของนิสิต
+                </p>
+                <p class="silver-learning">
+                    คณะเทคโนโลยีสารสนเทศและการสื่อสาร ได้รับรางวัลระดับ Silver พื้นที่การเรียนรู้
+                    &#34;กลุ่มวิสาหกิจชุมชนแปรรูปผ้าปักชนเผ่าและผ้าเขียนเทียน&#34; การประกวดรางวัล Learning
+                </p>
+                <a href="https://ict.up.ac.th/web/newseventict/1887" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-7" src="img/Rectangle 32.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/1886" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-8" src="img/Rectangle 33.svg" />
+                </a>
+
+                <div class="overlap-group">
+                    <a href="https://ict.up.ac.th/web/newseventict/1885" target="_blank" rel="noopener noreferrer">
+                    <img class="rectangle-9" src="img/Rectangle 34.svg" />
+                </a>
+                    <a href="https://ict.up.ac.th/web/newseventict/1885" target="_blank" rel="noopener noreferrer"
+                        ><p class="element-body-mass-index"><br />รางวัลที่ 2 Body Mass Index (BMI)</p></a
+                    >
+                    <p class="element-body-mass-index-2">
+                        คณะเทคโนโลยีสารสนเทศและการสื่อสาร คว้ารางวัลที่ 2 Body Mass Index (BMI) ประเภทส่วนงาน ในกิจกรรม &#34;BMI
+                        Challenge Show &amp; Share 2023&#34;
+                    </p>
+                </div>
+                <a href="https://ict.up.ac.th/web/newseventict/1884" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-10" src="img/Rectangle 35.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/1879" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-11" src="img/Rectangle 36.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/1877" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-12" src="img/Rectangle 37.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/1878" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-13" src="img/Rectangle 38.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/1876" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-14" src="img/Rectangle 39.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/1873" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-15" src="img/Rectangle 40.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/1887" target="_blank" rel="noopener noreferrer"
+                    ><p class="text-wrapper-4">คว้า 2 รางวัล KPIs 1.1.3</p></a
+                >
+                <a href="https://ict.up.ac.th/web/newseventict/1884" target="_blank" rel="noopener noreferrer"
+                    ><div class="text-wrapper-5">หารือหลักสูตรโท-เอก ผลิตกำลังคนคุณภาพสูง</div></a
+                >
+                <a href="https://ict.up.ac.th/web/newseventict/1878" target="_blank" rel="noopener noreferrer"
+                    ><p class="element-SHOW-SHARE-UP">ชนะเลิศอันดับที่ 1 SHOW &amp; SHARE UP-GREEN 2023 ประเภทนิสิต</p></a
+                >
+                <a href="https://ict.up.ac.th/web/newseventict/1886" target="_blank" rel="noopener noreferrer"
+                    ><p class="rr">รางวัลชนะเลิศ R2R รุ่นที่ 10 &#34;กลุ่มนวัตกรรม&#34;</p></a
+                >
+                <a href="https://ict.up.ac.th/web/newseventict/1879" target="_blank" rel="noopener noreferrer"
+                    ><p class="text-wrapper-6">นิสิต ICT รับรางวัล Super AI Engineer ครั้งที่ 3</p></a
+                >
+                <a href="https://ict.up.ac.th/web/newseventict/1876" target="_blank" rel="noopener noreferrer"
+                    ><p class="text-wrapper-7">คว้าที่ 1 PSRU Cyber Hackathon 2023</p></a
+                >
+                <a href="https://ict.up.ac.th/web/newseventict/1877" target="_blank" rel="noopener noreferrer"
+                    ><div class="text-wrapper-8">จัดทำแผนยุทธศาสตร์เพื่อการพัฒนาคณะ</div></a
+                >
+                <a href="https://ict.up.ac.th/web/newseventict/1873" target="_blank" rel="noopener noreferrer"
+                    ><p class="text-wrapper-9">คว้ารางวัลระดับ Silver Learning Space 2023</p></a
+                >
+                <p class="text-wrapper-10">
+                    คณะเทคโนโลยีสารสนเทศและการสื่อสาร คว้า 2 รางวัล ผลงาน Super KPIs ด้านวิชาการ ประเภท Super KPIs 1.1.3
+                    โครงการนวัตกรรมเพื่อพัฒนาการเรียนการสอน ในงาน UPILI Open House 2023
+                </p>
+                <p class="text-wrapper-11">
+                    คณะ ICT ม.พะเยา ร่วมกับ GISTDA และ สสน. พัฒนาหลักสูตรวิทยาการข้อมูลเชิงพื้นที่ (Geo Spatial Data Science)
+                    เตรียมผลิตกำลังคนคุณภาพสูง
+                </p>
+                <p class="element-2">
+                    นายรณชัย ทิพย์มณฑา บุคลากรชำนาญการ ได้รับรางวัลชนะเลิศอันดับ 1 การประกวดผลงานวิจัยเพื่อพัฒนางานประจำ รุ่นที่
+                    10 ประจำปีงบประมาณ 2566 &#34;กลุ่มนวัตกรรม&#34;
+                </p>
+                <p class="text-wrapper-12">
+                    นิสิตสาขา CS คณะเทคโนโลยีสารสนเทศและการสื่อสาร ได้รับรางวัลเหรียญทองแดง จากการเข้าร่วมโครงการ Super AI
+                    Engineer Season 3
+                </p>
+                <p class="text-wrapper-13">
+                    ผู้บริหารและบุคลากรคณะเทคโนโลยีสารสนเทศและการสื่อสาร ระดมความคิดเห็นเสนอแผนยุทธศาสตร์ และ จัดทำ OKR
+                    เพื่อการพัฒนาคณะ ในปีงบประมาณ 2567
+                </p>
+                <div class="div-wrapper"><div class="text-wrapper-14">ข่าวเด่น</div></div>
+                <div class="overlap-2">
+                    <div class="rectangle-16"></div>
+                    <a href="https://ict.up.ac.th/web/newseventict/1796" target="_blank" rel="noopener noreferrer"
+                        ><div class="text-wrapper-15">กิจกรรมแลกเปลี่ยนเรียนรู้</div></a
+                    >
+                    <p class="text-wrapper-16">
+                        เมื่อวันที่ 11 พฤษภาคม 2566 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยาจัดกิจกรรมแลกเปลี่ยนเรียนรู้
+                        หัวข้อ การรายงานผลการดำเนินงาน ประจำปีงบประมาณ พ.ศ. 2566 รอบ 6 เดือน
+                    </p>
+                </div>
+                <div class="overlap-3">
+                    <div class="rectangle-17"></div>
+                    <a href="https://ict.up.ac.th/web/newseventict/1798" target="_blank" rel="noopener noreferrer"
+                        ><div class="text-wrapper-17">ปฐมนิเทศนิสิตใหม่และพบผู้ปกครอง ประจำปีการศึกษา 2566</div></a
+                    >
+                    <p class="text-wrapper-18">
+                        เมื่อวันที่ 19 พฤษภาคม 2566 ณ ห้อง UB 002 ณ ห้อง UB 002 อาคาร 99 ปี พระอุบาลีคุณูปมาจารย์ (ปวง ธมฺมปญฺโญ)
+                        มหาวิทยาลัยพะเยา คณะเทคโนโลยีสารสนเทศและการสื่อสาร โดยงานคุณภาพนิสิต
+                        จัดโครงการปฐมนิเทศนิสิตใหม่และพบผู้ปกครอง ประจำปีการศึกษา 2566
+                    </p>
+                </div>
+                <div class="overlap-4">
+                    <div class="rectangle-18"></div>
+                    <a href="https://ict.up.ac.th/web/newseventict/1797" target="_blank" rel="noopener noreferrer"
+                        ><p class="text-wrapper-17">คว้า 2 รางวัล PR UP Network</p></a
+                    >
+                    <p class="text-wrapper-16">
+                        เมื่อวันที่ 18 พฤษภาคม 2566 ณ ห้องประชุมร้าน Happy Garden coffee นางสาวมยุเรศ แสงสว่าง นักประชาสัมพันธ์
+                        คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยา และเครือข่ายประชาสัมพันธ์ ร่วมเป็นผู้เสวนาในหัวข้อ
+                        “การสื่อสารองค์กร เพื่อยกระดับ World Ranking”
+                    </p>
+                </div>
+                <div class="text-wrapper-19">กิจกรรมคณะ</div>
+                
+                <a href="https://ict.up.ac.th/web/newseventict/1797" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-19" src="img/Rectangle 41.svg" />
+                </a>
+                
+                <a href="https://ict.up.ac.th/web/newseventict/1797" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-20" src="img/Rectangle 42.svg" />
+                </a>
+                
+                <a href="https://ict.up.ac.th/web/newseventict/1796" target="_blank" rel="noopener noreferrer">
+                <img class="rectangle-21" src="img/Rectangle 43.svg" />
+                </a>
+
+                <a href="https://ict.up.ac.th/web/newseventict/readmore" target="_blank" rel="noopener noreferrer"
+                    ><div class="text-wrapper-20">กิจกรรมทั้งหมด</div></a
+                >
+                <div class="group">
+                    <div class="overlap-group-2">
+                        <a href="https://ict.up.ac.th/web/" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-21">เบิกพัสดุ</div></a
+                        >
+                        <img class="vector" src="img/Vector.svg" />
+                    </div>
+                </div>
+                <div class="overlap-wrapper">
+                    <div class="overlap-group-2">
+                        <a href="https://ict.up.ac.th/carplan/" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-22">จองรถตู้</div></a
+                        >
+                        <img class="icon-truck" src="img/🦆 icon _truck_.svg" />
+                    </div>
+                </div>
+                <div class="overlap-group-wrapper">
+                    <div class="overlap-group-2">
+                        <div class="ICT">การดำเนินการ<br />คณะ ICT</div>
+                        <img class="group-2" src="img/Group-1.svg" />
+                    </div>
+                </div>
+                <div class="group-3">
+                    <div class="overlap-group-2">
+                        <a href="http://smarthr.up.ac.th/SalaryUP/Login" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-23">ยื่นใบลา</div></a
+                        >
+                        <img class="icon-note" src="img/Group.svg" />
+                    </div>
+                </div>
+                <div class="group-4">
+                    <div class="overlap-group-2">
+                        <a href="http://doga.up.ac.th/postal/Main/from/possearch.aspx" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-24">ค้นหาไปรษณีย์</div></a
+                        >
+                        <img class="icon-send" src="img/🦆 icon _send 2_.svg" />
+                    </div>
+                </div>
+                <div class="group-5">
+                    <div class="overlap-group-2">
+                        <a href="https://dms.up.ac.th/2566/data/login.aspx" target="_blank" rel="noopener noreferrer"
+                            ><div class="UP-e-DOCUMENT">UP<br />DOCUMENT</div></a>
+                        <img class="icon-book-saved" src="img/🦆 icon _book saved_.svg" />
+                    </div>
+                </div>
+                <div class="group-6">
+                    <div class="overlap-group-2">
+                        <a href="http://smartwork.ict.up.ac.th/" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-25">Smartwork</div></a
+                        >
+                        <img class="icon-people" src="img/🦆 icon _people_.svg" />
+                    </div>
+                </div>
+                <div button onec class="component"><div class="text-wrapper-26">ข่าวงานพัสดุ</button></div></div>
+                <div class="component-2"><div class="text-wrapper-27">ข่าวสำหรับนิสิต</div></div>
+                <div class="component-3"><div class="text-wrapper-28">ข่าวรับสมัครงาน</div></div>
+                <div class="component-4"><div class="text-wrapper-29">ข่าววิจัย</div></div>
+                <div class="overlap-6">
+                    <img class="rectangle-22" src="img/Rectangle 19.svg" />
+                    <img class="line-2" src="img/Line 1.svg" />
+                    <img class="line-3" src="img/Line 1.svg" />
+                    <img class="line-4" src="img/Line 1.svg" />
+                    <img class="line-5" src="img/Line 1.svg" />
+                    <img class="line-6" src="img/Line 1.svg" />
+                    <img class="line-7" src="img/Line 1.svg" />
+                    <div class="group-7">
+                        <div class="text-wrapper-30">09-09-66</div>
+                        <a href="https://ict.up.ac.th/web/newsict/1186" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-31">ประกาศรับสมัครนิสิต นักศึกษาปริญญาตรี หลายตำแหน่ง</div></a
+                        >
+                        <img class="group-8" src="img/เวลา.svg" />
+                    </div>
+                    <div class="group-9">
+                        <div class="text-wrapper-30">09-09-66</div>
+                        <a href="https://ict.up.ac.th/web/newsict/1208" target="_blank" rel="noopener noreferrer"
+                            ><div class="NIDA-debate-camp">เชิญชวนนิสิตระดับปริญญาตรีเข้าร่วม<br />โครงการ NIDA Debate Camp</div></a
+                        >
+                        <img class="group-10" src="img/เวลา.svg" />
+                    </div>
+                    <div class="group-11">
+                        <div class="text-wrapper-30">09-09-66</div>
+                        <a href="https://ict.up.ac.th/web/newsict/1251" target="_blank" rel="noopener noreferrer"
+                            ><div class="element-3">
+                                เชิญชวนนิสิตเข้าร่วมโครงการอบรมให้<br />ความรู้ทางธุรกิจแก่ผู้ประกอบการ<br />เริ่มต้น ประจำปี 2564
+                            </div></a
+                        >
+                        <img class="group-10" src="img/เวลา.svg" />
+                    </div>
+                    <div class="group-12">
+                        <div class="overlap-7">
+                            <div class="overlap-8">
+                                <div class="text-wrapper-30">09-09-66</div>
+                                <a href="https://ict.up.ac.th/web/newseventict/1863" target="_blank" rel="noopener noreferrer"
+                                    ><div class="text-wrapper-32">ส่งเสริมทักษะอาชีพผ้าเขียนเทียน</div></a
+                                >
+                            </div>
+                            <img class="group-13" src="img/เวลา.svg" />
+                        </div>
+                    </div>
+                    <div class="group-14">
+                        <div class="text-wrapper-30">09-09-66</div>
+                        <a href="https://ict.up.ac.th/web/newseventict/1862" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-33">โครงการธนาคารน้ำมันพืชเก่า ด้วยโมเดลเศรษฐกิจ BCG, SDGs</div></a
+                        >
+                        <img class="group-10" src="img/เวลา.svg" />
+                    </div>
+                    <div class="group-15">
+                        <div class="text-wrapper-30">09-09-66</div>
+                        <a href="https://ict.up.ac.th/web/newseventict/1861" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-34">
+                                ถอดบทเรียนและสรุปบทเรียนโครงการ<br />ของศูนย์พัฒนาราษฎรบนพื้นที่สูงฯ
+                            </div></a
+                        >
+                        <img class="group-10" src="img/เวลา.svg" />
+                    </div>
+                    <div class="component-5">
+                        <a href="https://ict.up.ac.th/web/newseventict/readmore" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-35">ข่าวสารทั้งหมด</div></a
+                        >
+                    </div>
+                </div>
+                <div class="overlap-9">
+                    <div class="rectangle-23"></div>
+                    <div class="text-wrapper-36">ข่าวสาร</div>
+                </div>
+                <img class="rectangle-24" src="img/School of Information and Communication Technology, University of Phayao2.png" />
+            </div>
+        </div>
+    </body>
+
+    <!--ใส่โค้ดตรงนี้-->
+
+
+        <div class="card text-white " id="footer">
+            <div id="line-center"></div>
+            <div id="text-center">
+                <div class=" fs-5 " id="text">ศึกษาต่อคณะ ICT</div>
+            </div>
+            <div id="footer-link" class="nav">
+                <div  style="width: 22rem; height: 480px;" id="block1">
+                    <p style="font-size: 20px; text-align: center;" class="text-white">คณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยพะเยา</p>
+                    <div>
+                        <p class="text-white">Email : ict@up.ac.th<br>
+                        โทรศัพท์ : 054 466 666 ต่อ 2326<br>
+                        ที่อยู่ : คณะเทคโนโลยีสารสนเทศและการสื่อสารอาคารเทคโนโลยีสารสนเทศและการสื่อสาร 19 ม.2 ต.แม่กา อ.เมืองพะเยา จ.พะเยา มหาวิทยาลัยพะยา<br>
+                        ติดต่อคณบดี</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/WeLoveICTUP"><img src="https://credit9.com/wp-content/uploads/2022/11/Facebook.png" width="40px"  height="40px" alt=""></a>
+                        <a href="https://www.youtube.com/ICTPYOChannel"><img src="picture/logo_youtube.png" width="40px" height="40px" alt=""></a>
+                        <a href="https://ict.up.ac.th/web/greenoffice" class="text-decoration-none"><div id="ict-green-office" class=" text-white  mt-2 "><img src="https://th.bing.com/th/id/R.285674b1889dca891d9517d610da136b?rik=MW2u%2bc28Q8xUuQ&riu=http%3a%2f%2fgame-icons.net%2ficons%2florc%2foriginals%2fpng%2f000000%2ftransparent%2fpine-tree.png&ehk=ij%2fo0c5Yg1FHI2%2fWd78CpbOphIsPeJKc7ZJLPeWKjew%3d&risl=&pid=ImgRaw&r=0"  width="30px" height="30px"  alt="">ICT GREEN OFFICE</div></a>
+                    </div>
+                </div>
+                <div  style="width: 22rem; height: 480px;" id="block2">
+                    <p style="font-size: 20px;" class="text-white text-center">SITE MAP</p>
+                    <div style="margin-top: 32px;">
+                        <ul>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/main/information"><li style="color:white;">แนะนำคณะ</li></a>
+                            <a class="text-decoration-none " href="page5.html"><li style="color:white;">หลักสูตรที่เปิดสอน</li></a>
+                            <a class="text-decoration-none " href="page4.html"><li style="color:white;">ฝึกประสบการณ์วิชาชีพ</li></a>
+                            <a class="text-decoration-none " href="https://dev.coop.ict.up.ac.th/"><li style="color:white;">ระบบบริหารจัดการโครงการสหกิจศึกษา</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/student/sqict"><li style="color:white;">พัฒนานิสิต</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/student/informationsystem"><li style="color:white;">ระบบสารสนเทศสำหรับนิสิต</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/alumni/"><li style="color:white;">ระบบสารสนเทศศิษย์เก่า</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/personnel/department"><li style="color:white;">หน่วยงานภายใน</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/personnel/major"><li style="color:white;">สาขาวิชา</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/personnel/download"><li style="color:white;">ขั้นตอนการให้บริการและดาวน์โหลดเอกสาร</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/operation/workmanual"><li style="color:white;">คู่มือการให้บริการ</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/personnel/informationsystem"><li style="color:white;">ระบบสารสรเทศสำหรับบุคลากร</li></a>
+                            <a class="text-decoration-none " href="https://ph01.tci-thaijo.org/index.php/jsid/index"><li style="color:white;">วารสารวิชาการ(JSID)</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/newseventict/943"><li style="color:white;">มาตราการเฝ้าระวังในช่วงสถาณการณ์ COVID-19</li></a>
+                            <a class="text-decoration-none " href="https://ict.up.ac.th/web/student/covid19"><li style="color:white;">มาตราการเกี่ยวกับนิสิตในชวงสถาณการณ์ COVID-19</li></a>                       
+                          </ul>
+                    </div>
+                </div>
+                <div style="width: 22rem; height: 480px;" id="block3">
+                    <p style="font-size: 20px;" class="text-white text-center">เว็บไซต์ที่เกี่ยวข้อง ( ภายใน )</p>
+                    <div style="margin-top: 32px;">
+                        <ul>
+                            <a class="text-decoration-none " href="https://www.up.ac.th/th/"><li style="color:white;">มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="http://www.doga.up.ac.th/"><li style="color:white;">กองกลาง มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="https://personnel.up.ac.th/"><li style="color:white;">กองกลางเจ้าหน้าที่ มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="https://finance.up.ac.th/V2/"><li style="color:white;">กองคลัง มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="https://www.does.up.ac.th/"><li style="color:white;">กองบริการการศึกษา มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="https://plan.up.ac.th/"><li style="color:white;">กองแผนงาน มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="https://dsq.up.ac.th/v1/main.php"><li style="color:white;">กองพัฒนาคุณภาพนิสิตและนิสิตพิการ มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="www.dra.up.ac.th"><li style="color:white;">กองบริหารงานวิจัย มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="https://building.up.ac.th/"><li style="color:white;">กองอาคารสถานที่ มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="http://www.clm.up.ac.th/v1/"><li style="color:white;">ศูนย์บรรณสารและการเรียนรู้ มหาวิทยาลัยพะเยา</li></a>
+                            <a class="text-decoration-none " href="https://citcoms.up.ac.th/"><li style="color:white;">ศูนย์บริการเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยา</li></a>                     
+                          </ul>
+                          
+                    </div>
+                </div>
+                <div style="width: 22rem; height: 480px;" id="block4">
+                    <p style="font-size: 20px;" class="text-white text-center">เว็บไซต์ที่เกี่ยวข้อง ( ภายนอก )</p>
+                    <div style="margin-top: 32px;">
+                        <ul>
+                            <a class="text-decoration-none " href="https://www.mhesi.go.th/"><li style="color:white;">กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม</li></a>
+                            <a class="text-decoration-none " href="https://www.moe.go.th/"><li style="color:white;">กระทรวงศึกษาธิการ</li></a>
+                            <a class="text-decoration-none " href="http://www.oic.go.th/Ginfo/moreinfo.asp?g=324227332%26I&i=222%22832%22422&p=%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86&o=%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2+%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C+%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1"><li style="color:white;">สำนักงานคณะกรรมการอุดมศึกษา</li></a>
+                            <a class="text-decoration-none " href="https://citt.or.th/"><li style="color:white;">สมาคมคณบดีคณะเทคโนโลยีสารสนเทศ</li></a>
+                            <a class="text-decoration-none " href="https://www.nrct.go.th/"><li style="color:white;">สำนักงานการวิจัยแห่งชาติ</li></a>
+                            <a class="text-decoration-none " href="https://www.tsri.or.th/"><li style="color:white;">สำนักงานคณะกรรมการส่งเสริมวิทยาศาสตร์วิจัยและนวัตกรรม</li></a>
+                            <a class="text-decoration-none " href="https://www.arda.or.th/"><li style="color:white;">สำนักงานพัฒนาการวิจัยการเกษตร ( องค์การมหาชน)</li></a>
+                            <a class="text-decoration-none " href="https://www.studentloan.or.th/"><li style="color:white;">กองทุนเงินให้กู้ยืมเพื่อการศึกษา</li></a>
+                            <a class="text-decoration-none " href="https://www.nhso.go.th/"><li style="color:white;">สำนักงานหลักประกันสุขภาพแห่งชาติ</li></a>
+                            <a class="text-decoration-none " href="https://www.sso.go.th/wpr/"><li style="color:white;">สำนักงานประกันสังคม</li></a>
+                            <a class="text-decoration-none " href="https://www.dti.or.th/"><li style="color:white;">สถาบันเทคโนโลยีป้องกันประเทศ</li>                       </a>
+                          </ul>                      
+                    </div>
+                </div>
+            </div>
+            <div id="link-to-top">
+                <p style="font-size: 80px;" class="text-center">&#8593;</p>
+            </div>
+            <div   id="circle_off-side">
+                <p onclick="totop()" class="btn" id="circle"></p>
+            </div>
+            <div class="text-center">&copy; 2023 คณะเทคโนโลยีสารสนเทศและการสื่อสารมหาวิทยาลัยพะเยา. All right reserved.</div>
+        </div>
+
+    </body>
+</html>

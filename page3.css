@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: rgba(120, 40, 253, 1);
+    position: relative;
+    justify-content:space-between;
+    text-align: center;
+    padding: 20px 60px;
+    /* height: 100px; */
+}
+nav .icon{
+    /* font-size: 40px; */
+    font-weight: 800;
+    /* margin-top: auto; */
+    padding-top: 6px;
+    cursor: pointer;
+    margin-left: 60px;
+    
+
+}
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ol li{
+    margin: 0 30px;
+}
+nav ol li a {
+    color: rgb(255, 253, 253);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    /* margin-right: -30px; */
+   
+}
+
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(213, 189, 254, 1);
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+.content{
+    background-color: rgba(213, 189, 254, 1);
+    /* border: 1px solid rgb(180, 119, 186); */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: 90px;
+    width: 450px;
+    height: 60px;
+    /* padding-left: 50px; */
+    /* border:black solid 1px; */
+    /* display: flex; */
+    text-align: center;
+    position: relative;
+    padding: 15px 50px;
+    font-size: 25px;
+
+
+} 
+.content1{
+    background-color: rgba(237, 227, 255, 0.83);
+    /* border: 1px solid rgb(180, 119, 186); */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: -295px;
+    /* margin-right: 100px; */
+    width: 220px;
+    height: 60px;
+    /* align-items: center; */
+    text-align: center;
+    position: relative;
+    padding: 15px 50px;
+    font-size: 25px;
+    
+    
+}
+.content2{
+    background-color: rgba(213, 189, 254, 1);
+    box-sizing: border-box;
+    margin-left: 90px;
+    width: 180%;
+    height: 500px;
+    padding: 50px ;
+    font-size: 22px;
+    margin-right: 90px;
+    /* justify-content:space-between; */
+    cursor: pointer;
+    
+
+}
+.grid1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 2fr 1fr; /* กำหนดให้ .article เป็นส่วนแรก (2fr) และ .png_1 เป็นส่วนหลัง (1fr) */
+    grid-gap: 20px; /* กำหนดระยะห่างระหว่าง .article กับ .png_1 */
+    
+}
+
+.article {
+    flex: 2 ; /* ให้ .article ขยายตามพื้นที่ที่เหลือ */
+
+     cursor: pointer;
+    
+
+}
+
+.png_1 {
+    flex: 1; /* ให้ .png_1 ขยายตามพื้นที่ที่เหลือ */
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 50px;
+    
+}
+.boxs{
+
+    background-color: rgba(255, 247, 119, 0.44);
+    width: 400px;
+    height: 60px;
+    font-size: 22px;
+    margin-left: 90px;
+    text-align: center;
+    padding: 15px 50px;
+}
+.youtube{
+    margin-left: 90px;
+    cursor: pointer;
+    
+}
+.textend{
+    text-align: center;
+    margin-top: 30px;
+    padding: 60px 60px;
+    font-size: 15px;
+    color: rgb(147, 21, 179);
+}
